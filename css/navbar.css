@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 30px 60px;
+    background-color: #000;
+    font-family: 'Rubik', sans-serif;
+    z-index: 10000;
+}
+
+.navbar.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+
+.logo {
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+.logo img {
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 25px;
+}
+
+.navlinks {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlink {
+    position: relative;
+    list-style: none;
+}
+
+.navlink a:hover,
+.navbar.sticky .navlink a:hover {
+    color: #7b7b7b;
+}
+
+.navlink a {
+    color: #fff;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.navbar.sticky .logo,
+.navbar.sticky .navlink a {
+    color: #000;
+}
+
+@media only screen and (min-width: 100px) {
+	.navbar, .navlinks {
+		display: column;
+        text-align: center;
+	}
+
+    .navbar {
+        padding: 5px 100px;
+    }
+
+    .navbar * {
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar, .navlinks {
+		display: flex;
+	}
+
+    .navbar {
+        padding: 30px 60px;
+    }
+}

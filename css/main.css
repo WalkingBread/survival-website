@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.main {
+    background-image: url('../resources/main.png');
+    width: 100%;
+    width: 100vw;
+    height: 100vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.page-title {
+    padding-top: 40vh;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 3em;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: #fff;
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+.campfire-animation {
+    width: 170px;
+    height: 150px;
+}
+
+.course-info-container {
+    width: 100vw;
+    height: fit-content;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 30px 50px 30px 50px;
+    background-color: #eeebeb;
+}
+
+.course-info {
+    display: flex;
+    height: 30vh;
+    margin-bottom: 30px;
+}
+
+.course-list {
+    margin-top: 50px;
+}
+
+.date-box, .title-box {
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+    box-shadow: #bcbcbc 0 1px;
+}
+
+.date-box {
+    width: 20%;
+    margin-right: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-box {
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.place-info {
+    font-size: 1.5em;
+    margin-bottom: 6px;
+}
+
+.course-links {
+    margin-top: auto;
+}
+
+.course-link {
+    text-decoration: underline;
+    color: #c75b5b;
+    font-weight: 600;
+    margin-right: 2vw;
+}
+
+.sub-title {
+    text-align: center;
+}
+
+.contact {
+    background-color: #4a4458;
+    /*background-color: #f39135;*/
+    width: 100vw;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 50px 0 30px 0;
+    color: #fff;
+    height: fit-content;
+}
+
+.contact-mainbox {
+    margin-top: 40px;
+    display: flex;
+}
+
+.contact-form {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.contact-form label {
+    font-size: 25px;
+}
+
+.contact-form input[type="text"], .contact-form textarea, .contact-form button {
+    border: none;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #f5c298;
+    font-family: 'Times New Roman', Times, serif;
+    color:#fff;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+.contact-form button {
+    width: 100px;
+}
+
+.name-data input {
+    width: 250px;
+}
+
+.email-data input[name="title"], .contact-form textarea {
+    max-width: 520px;
+}
+
+.contact-form textarea {
+    height: 200px;
+}
+
+.contact-mainbox-image {
+    width: 50%;
+    flex: 1;
+}
+
+.contact-mainbox-image img {
+    width: 600px;
+    height: 400px;
+    margin-top: auto;
+}
+
+.contact .sub-title {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.input-box {
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.aboutus {
+    padding: 50px 50px 30px 50px;
+    width: 100vw;
+    height: fit-content;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #244d3f;
+    background-color: #eeebeb;
+    /*background-color: #396f7b;*/
+    color: #fff;
+    color:#3f3b46;
+    background-image: url('../resources/white-panorama.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: bottom;
+    height: 120vh;
+}
+
+.aboutus .sub-title {
+    margin-bottom: 30px;
+}
+
+.aboutus-text {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.aboutus-more div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus img {
+    width: 600px;
+    height: 400px;
+}
+
+.footer {
+    min-height: 20vh;
+    width: 100vw;
+    background-color: #3f3b46;
+}
+
+@media only screen and (min-width: 100px) {
+    .name-data {
+        display: column;
+    }
+
+    .contact-mainbox-image {
+        display: none;
+        width: 0;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .email-data input[name="title"], .contact-form textarea {
+        width: 80%;
+    }
+
+    .aboutus-more {
+        display: column;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-mainbox, .name-data {
+        display: flex;
+    }
+
+    .contact-mainbox-image {
+        display: flex;
+        width: 50%;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+
+    .email-data input[name="title"], .contact-form textarea {
+        width: 100%;
+    }
+
+    .aboutus-more {
+        display: flex;
+        margin-top: 0;
+    }
+}
+
+.appear {
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.appear.inview {
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.3s;
+}
