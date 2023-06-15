@@ -28,16 +28,16 @@
     </div>
     <div class="aboutus" id="aboutus">
         <h1 class="sub-title appear">O nas</h1>
-        <!---<img src="resources/forest2.png" alt="forest">-->
-        <p class="aboutus-text appear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, nesciunt quo quod libero tenetur alias debitis sequi ullam optio consequuntur suscipit, dignissimos fugit quasi. Placeat commodi ipsa suscipit quas doloribus?</p>
-        <div class="aboutus-more">
-
-        </div>
+        <p class="aboutus-text appear">
+            Jesteśmy miłośnikami natury i survivalu.
+            Organizujemy kursy i szkolenia praktyczne, które nauczą was jak żyć w zgodzie z naturą i przetrwać w najtrudniejszych warunkach.
+        </p>
+        <a href="#courses"><button class="join-us-button appear">Dołącz do nas!</button></a>
     </div>
-    <div class="course-info-container">
+    <div class="course-info-container" id="courses">
         <h1 class="sub-title">Nasze szkolenia</h1>
         <div class="course-list">
-            <div class="course-info">
+            <div class="course-info appear">
                 <div class="date-box">
                     <h1>17-20 LIP</h1>
                 </div>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="course-info">
+            <div class="course-info appear">
                 <div class="date-box">
                     <h1>20-22 LIP</h1>
                 </div>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <div class="course-info">
+            <div class="course-info appear">
                 <div class="date-box">
                     <h1>13-18 SIE</h1>
                 </div>
@@ -78,45 +78,88 @@
             </div>
         </div>
     </div>
-    <div class="contact" id="contact">
-        <h1 class="sub-title">Masz pytanie? Chcesz zapisać się na kurs?<br><span style="text-decoration: underline;">Napisz do nas.</span></h1>
-        <div class="contact-mainbox">
-            <div class="contact-form">
-                <form method="POST">
-                    <div class="name-data">
-                        <div class="input-box">
-                            <label>Imię<label><br>
-                            <input type="text" name="name" placeholder="Imię" required><br>
-                        </div>
-                        <div class="input-box">
-                            <label>Nazwisko</label><br>
-                            <input type="text" name="surname" placeholder="Nazwisko" required><br>
-                        </div>
-                    </div>
-                    <div class="email-data">
-                        <div class="input-box">
-                            <label>E-mail</label><br>
-                            <input type="text" name="email" placeholder="E-mail" required><br>
-                        </div>
-                        <div class="input-box">
-                            <label>Tytuł wiadomości</label><br>
-                            <input type="text" name="title" placeholder="Tytuł" required><br>
-                        </div>
-                        <div class="input-box">
-                            <label>Treść</label><br>
-                            <textarea placeholder="Twoja opowieść..."></textarea>
-                        </div>
-                        <button>Wyślij</button>
-                    </div>
-                </form>
+    <div class="our-crew-info">
+        <h1 class="sub-title">Nasza kadra</h1>
+        <div class="crew-about-boxes">
+            <div class="crew-about-box appear">
+
             </div>
-            <div class="contact-mainbox-image">
-                <img src="resources/campfire.gif" alt="campfire">
+            <div class="crew-about-box appear">
+                
             </div>
-        </div>      
+            <div class="crew-about-box appear">
+                
+            </div>
+        </div>
+    </div>
+    <div class="contact-box" id="contact">
+        <div class="contact-form-box">
+            <h1 class="contact-title">Masz pytanie? Chcesz zapisać się na kurs?<br><span style="text-decoration: underline;">Napisz do nas.</span></h1>
+            <form method="POST">
+                <div class="name-data">
+                    <div class="input-box">
+                        <label>Imię</label><br>
+                        <input type="text" name="name" placeholder="Imię" required><br>
+                    </div>
+                    <div class="input-box">
+                        <label>Nazwisko</label><br>
+                        <input type="text" name="surname" placeholder="Nazwisko" required><br>
+                    </div>
+                </div>
+                <div class="email-data">
+                    <div class="input-box">
+                        <label>E-mail</label><br>
+                        <input type="text" name="email" placeholder="E-mail" required><br>
+                    </div>
+                    <div class="input-box">
+                        <label>Tytuł wiadomości</label><br>
+                        <input type="text" name="title" placeholder="Tytuł" required><br>
+                    </div>
+                    <div class="input-box">
+                        <label>Treść</label><br>
+                        <textarea placeholder="Twoja opowieść..."></textarea>
+                    </div>
+                </div>
+                <button>Wyślij</button>
+            </form>
+        </div>
     </div>
     <div class="footer">
-
+        <div class="company-info">
+            <div class="info-box">
+                <h2>E-mail</h2>
+                <p>poczta@poczta.pl</p>
+                <p>poczta@poczta.pl</p>
+            </div>
+            <div class="info-box">
+                <h2>E-mail</h2>
+                <p>poczta@poczta.pl</p>
+                <p>poczta@poczta.pl</p>
+            </div>
+            <div class="logo-campfire">
+                <img src="resources/campfire.gif" alt="campfire">
+            </div>
+            <div class="info-box">
+                <h2>Telefon</h2>
+                <p>+48 000 000 000</p>
+                <p>+48 000 000 000</p>
+            </div>
+            <div class="info-box">
+                <h2>E-mail</h2>
+                <p>poczta@poczta.pl</p>
+                <p>poczta@poczta.pl</p>
+            </div>
+        </div>
+        <hr>
+        <div class="social-media-links">
+            <ul>
+                <li><a href=""><img src="resources/fb.png" alt="facebook"></a></li>
+                <li><a href=""><img src="resources/ig.png" alt="instagram"></a></li>
+                <li><a href=""><img src="resources/linkedin.png" alt="linkedin"></a></li>
+                <li><a href=""><img src="resources/yt.png" alt="youtube"></a></li>
+                <li><a href=""><img src="resources/twitter.png" alt="twitter"></a></li>
+            </ul>
+        </div>
     </div>
 </body>
 <script src="js/navbar.js"></script>

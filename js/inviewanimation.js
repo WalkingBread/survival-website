@@ -3,9 +3,10 @@ const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
             entry.target.classList.add('inview');
-        } else {
+        } 
+        /*else {
             entry.target.classList.remove('inview');
-        }
+        }*/
     });
 });
 appear.forEach(a => {
