@@ -90,3 +90,16 @@
         padding: 30px 60px;
     }
 }
+
+.toggle-high-contrast {
+    background: transparent;
+    border: none;
+}
+
+.toggle-high-contrast img {
+    width: 30px;
+}
+
+.navbar.sticky .toggle-high-contrast img {
+    content: url("../resources/disabled-black.png");
+}

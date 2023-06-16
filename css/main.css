@@ -297,6 +297,10 @@ body {
     font-size: 30px;
 }
 
+.crew-name {
+    font-weight: bold;
+}
+
 .lets-talk {
     margin-top: 40px;
     display: flex;
@@ -323,6 +327,31 @@ body {
     background-image: url('../resources/fog.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.review-boxes {
+    margin-top: 4vh;
+}
+
+.review-box {
+    margin: auto;
+    margin-bottom: 5vh;
+    width: 80vw;
+    min-height: 35vh;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5vh 3vw;
+    color: #fff;
+}
+
+.review-text {
+    font-size: 30px;
+    margin-top: 2vh;
+}
+
+.review-author {
+    font-size: 30px;
+    text-align: right;
 }
 
 @media only screen and (min-width: 100px) {
@@ -392,4 +421,9 @@ body {
     opacity: 1;
     transform: none;
     transition-delay: 0.3s;
+}
+
+.high-contrast {
+    background-color: #000;
+    color: #fff;
 }
