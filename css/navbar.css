@@ -94,6 +94,8 @@
 .toggle-high-contrast {
     background: transparent;
     border: none;
+    margin-right: 2vw;
+    
 }
 
 .toggle-high-contrast img {

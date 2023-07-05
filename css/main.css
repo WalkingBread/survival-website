@@ -15,6 +15,8 @@ html {
 
 body {
     overflow-x: hidden;
+    min-width: 415px;
+    width: auto !important;
 }
 
 .main {
@@ -26,10 +28,10 @@ body {
     background-repeat: no-repeat;
     position: relative;
     font-family: 'Josefin Sans', sans-serif;
+    padding-top: 40vh;
 }
 
 .page-title {
-    padding-top: 40vh;
     text-align: center;
     color: #fff;
     letter-spacing: 2px;
@@ -48,7 +50,9 @@ body {
     height: 150px;
 }
 
-.course-info-container, .contact, .aboutus, .contact-box, .our-crew-info, .review-section-box {
+.course-info-container, .contact, 
+.aboutus, .contact-box, .our-crew-info, 
+.review-section-box, .location-info {
     width: 100vw;
     height: fit-content;
     min-height: 100vh;
@@ -85,6 +89,11 @@ body {
     align-items: center;
 }
 
+.course-date {
+    font-size: 3em;
+    font-weight: bold;
+}
+
 .title-box {
     width: 80%;
     background-color: #fff;
@@ -93,8 +102,13 @@ body {
     flex: 1;
 }
 
+.course-title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .place-info {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 6px;
 }
 
@@ -116,7 +130,6 @@ body {
 
 .contact {
     background-color: #4a4458;
-    /*background-color: #f39135;*/
     padding: 50px 0 30px 0;
     padding: 5vh 0 3vh 0;
     color: #fff;
@@ -146,7 +159,7 @@ body {
     width: 100%;
 }
 
-.contact-form-box input[type="text"], .contact-form-box textarea, .contact-form-box button {
+.contact-input, #submit {
     border: none;
     min-height: 60px;
     border-radius: 3px;
@@ -157,11 +170,8 @@ body {
     padding: 5px 10px 5px 10px;
 }
 
-.contact-form-box button {
+#submit {
     color:#fff;
-}
-
-.contact-form-box button {
     width: 100px;
 }
 
@@ -231,6 +241,10 @@ body {
     padding: 5vh 10vw 5vh 10vw;
     color: white;
     font-family: 'Lato', sans-serif;
+}
+
+.footer-label {
+    font-size: 1.5em;
 }
 
 .social-media-links {
@@ -317,7 +331,7 @@ body {
     padding: 10px 20px 10px 20px;
 }
 
-.lets-talk-button:hover {
+.lets-talk-button:hover, .join-us-button:hover {
     background-color: #fff;
     color: #000;
 }
@@ -337,7 +351,6 @@ body {
     margin: auto;
     margin-bottom: 5vh;
     width: 80vw;
-    min-height: 35vh;
     height: fit-content;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 5vh 3vw;
@@ -352,6 +365,40 @@ body {
 .review-author {
     font-size: 30px;
     text-align: right;
+}
+
+.review-date {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.location-info {
+    padding: 5vh 5vw;
+    background-color: #444444;
+    color: #fff;
+    text-align: center;
+}
+
+.address-info {
+    margin-top: 2vh;
+    font-size: 30px;
+}
+
+.opening-hours {
+    margin: auto;
+    margin-top: 2vh;
+    font-size: 30px;
+}
+
+.opening-hours td {
+    width: 100px;
+    text-align: left;
+}
+
+.map-container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 100px) {
@@ -376,6 +423,10 @@ body {
     .info-box {
         margin-bottom: 10vh;
     }
+
+    .page-title {
+        font-size: 3em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -397,6 +448,10 @@ body {
 
     .info-box {
         margin-bottom: 0;
+    }
+
+    .page-title {
+        font-size: 5em;
     }
 }
 
@@ -423,7 +478,16 @@ body {
     transition-delay: 0.3s;
 }
 
-.high-contrast {
+.high-contrast, #submit.high-contrast {
     background-color: #000;
     color: #fff;
+    border: #eeff00 1px solid;
+}
+
+.aboutus .sub-title.high-contrast {
+    border: none;
+}
+
+.aboutus.high-contrast, .contact-box.high-contrast {
+    background-image: url("../resources/dark-panorama.png");
 }

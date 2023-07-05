@@ -42,11 +42,11 @@
         <div class="course-list">
             <div class="course-info appear">
                 <div class="date-box">
-                    <h1>17-20 LIP</h1>
+                    <span class="course-date">17-20 LIP</span>
                 </div>
                 <div class="title-box">
                     <p class="place-info">Puszcza Białowieska</p>
-                    <h2>CASTAWAY - Kurs inspirowany filmem z Tomem Hanksem</h2>
+                    <span class="course-title">CASTAWAY - Kurs inspirowany filmem z Tomem Hanksem</span>
                     <div class="course-links">
                         <a class="course-link" href="">O KURSIE</a>
                         <a class="course-link" href="#contact">ZAPISZ SIĘ</a>
@@ -55,11 +55,11 @@
             </div>
             <div class="course-info appear">
                 <div class="date-box">
-                    <h1>20-22 LIP</h1>
+                    <span class="course-date">20-22 LIP</span>
                 </div>
                 <div class="title-box">
                     <p class="place-info">Łódź, Las Łagiewnicki</p>
-                    <h2>Kurs nawigacyjny z kompasem</h2>
+                    <span class="course-title">Kurs nawigacyjny z kompasem</span>
                     <div class="course-links">
                         <a class="course-link" href="">O KURSIE</a>
                         <a class="course-link" href="#contact">ZAPISZ SIĘ</a>
@@ -68,11 +68,11 @@
             </div>
             <div class="course-info appear">
                 <div class="date-box">
-                    <h1>13-18 SIE</h1>
+                    <span class="course-date">13-18 SIE</span>
                 </div>
                 <div class="title-box">
                     <p class="place-info">Zakopane</p>
-                    <h2>Kurs ratownictwa z TOPR</h2>
+                    <span class="course-title">Kurs ratownictwa z TOPR</Span>
                     <div class="course-links">
                         <a class="course-link" href="">O KURSIE</a>
                         <a class="course-link" href="#contact">ZAPISZ SIĘ</a>
@@ -113,14 +113,14 @@
             </div>
         </div>
         <div class="lets-talk">
-            <a href="#contact"><button class="lets-talk-button">Porozmawiajmy</button></a>
+            <a href="#contact"><button class="lets-talk-button appear">Porozmawiajmy</button></a>
         </div>
     </div>
     <div class="review-section-box">
         <h1 class="sub-title">Opinie</h1>
         <div class="review-boxes">
             <div class="review-box">
-                <h2 class="review-date">23.04.2023</h2>
+                <p class="review-date">23.04.2023</p>
                 <p class="review-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores cum corporis quis explicabo dolore minus molestias officiis. 
                     Eos quibusdam voluptatibus saepe autem id explicabo possimus eum totam quos magnam?
@@ -128,7 +128,7 @@
                 <p class="review-author">~ Anna Nowak</p>
             </div>
             <div class="review-box">
-                <h2 class="review-date">28.02.2023</h2>
+                <p class="review-date">28.02.2023</p>
                 <p class="review-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores cum corporis quis explicabo dolore minus molestias officiis. 
                     Eos quibusdam voluptatibus saepe autem id explicabo possimus eum totam quos magnam?
@@ -136,7 +136,7 @@
                 <p class="review-author">~ Anna Nowak</p>
             </div>
             <div class="review-box">
-                <h2 class="review-date">03.01.2023</h2>
+                <p class="review-date">03.01.2023</p>
                 <p class="review-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolores cum corporis quis explicabo dolore minus molestias officiis. 
                     Eos quibusdam voluptatibus saepe autem id explicabo possimus eum totam quos magnam?
@@ -152,40 +152,76 @@
                 <div class="name-data">
                     <div class="input-box">
                         <label>Imię</label><br>
-                        <input type="text" name="name" placeholder="Imię" required><br>
+                        <input class="contact-input" type="text" name="name" placeholder="Imię" required><br>
                     </div>
                     <div class="input-box">
                         <label>Nazwisko</label><br>
-                        <input type="text" name="surname" placeholder="Nazwisko" required><br>
+                        <input class="contact-input" type="text" name="surname" placeholder="Nazwisko" required><br>
                     </div>
                 </div>
                 <div class="email-data">
                     <div class="input-box">
                         <label>E-mail</label><br>
-                        <input type="text" name="email" placeholder="E-mail" required><br>
+                        <input class="contact-input" type="text" name="email" placeholder="E-mail" required><br>
                     </div>
                     <div class="input-box">
                         <label>Tytuł wiadomości</label><br>
-                        <input type="text" name="title" placeholder="Tytuł" required><br>
+                        <input class="contact-input" type="text" name="title" placeholder="Tytuł" required><br>
                     </div>
                     <div class="input-box">
                         <label>Treść</label><br>
-                        <textarea placeholder="Twoja opowieść..."></textarea>
+                        <textarea class="contact-input" name="content" placeholder="Twoja opowieść..."></textarea>
                     </div>
                 </div>
-                <button>Wyślij</button>
+                <button id="submit">Wyślij</button>
             </form>
         </div>
+    </div>
+    <div class="location-info">
+        <h1 class="sub-title">Lokalizacja</h1>
+        <p class="address-info">
+            Zapraszamy do naszego biura od poniedziałku do piątku w godzinach:
+        </p>
+        <table class="opening-hours">
+            <tr>
+                <td>Pn.</td>
+                <td>7 - 18</td>
+            </tr>
+            <tr>
+                <td>Wt.</td>
+                <td>7 - 18</td>
+            </tr>
+            <tr>
+                <td>Śr.</td>
+                <td>7 - 18</td>
+            </tr>
+            <tr>
+                <td>Czw.</td>
+                <td>8 - 16</td>
+            </tr>
+            <tr>
+                <td>Pt.</td>
+                <td>8 - 16</td>
+            </tr>
+            <tr>
+                <td>So.</td>
+                <td>10 - 15</td>
+            </tr>
+        </table>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513.7053951226857!2d21.019675591126177!3d52.23233129002648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eccf6d63aaaab%3A0xbe1fc881b9649be3!2sEnergy%20Gate%20Europe!5e0!3m2!1spl!2spl!4v1687348174644!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="address-info">Adres: Nowy Świat 7/15, 00-496 Warszawa</p>
     </div>
     <div class="footer">
         <div class="company-info">
             <div class="info-box">
-                <h2>E-mail</h2>
+                <p class="footer-label">E-mail</p>
                 <p>poczta@poczta.pl</p>
                 <p>poczta@poczta.pl</p>
             </div>
             <div class="info-box">
-                <h2>E-mail</h2>
+                <p class="footer-label">E-mail</p>
                 <p>poczta@poczta.pl</p>
                 <p>poczta@poczta.pl</p>
             </div>
@@ -193,12 +229,12 @@
                 <img src="resources/campfire.gif" alt="campfire">
             </div>
             <div class="info-box">
-                <h2>Telefon</h2>
+                <p class="footer-label">Telefon</p>
                 <p>+48 000 000 000</p>
                 <p>+48 000 000 000</p>
             </div>
             <div class="info-box">
-                <h2>E-mail</h2>
+                <p class="footer-label">E-mail</p>
                 <p>poczta@poczta.pl</p>
                 <p>poczta@poczta.pl</p>
             </div>
@@ -206,7 +242,7 @@
         <hr>
         <div class="social-media-links">
             <ul>
-                <li><a href=""><img src="resources/fb.png" alt="facebook"></a></li>
+                <li><a href=""><img src="resources/fb.png" alt="facebook" ></a></li>
                 <li><a href=""><img src="resources/ig.png" alt="instagram"></a></li>
                 <li><a href=""><img src="resources/linkedin.png" alt="linkedin"></a></li>
                 <li><a href=""><img src="resources/yt.png" alt="youtube"></a></li>
@@ -218,4 +254,6 @@
 <script src="js/navbar.js"></script>
 <script src="js/inviewanimation.js"></script>
 <script src="js/highcontrast.js"></script>
+<script src="js/formdata.js"></script>
+<script src="js/fetchreviews.js"></script>
 </html>
